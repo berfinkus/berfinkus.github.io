@@ -1,6 +1,7 @@
 :root {
-  --accent: #c2410c; /* Koyu Bor Turuncusu */
-  --navy: #1e3a8a;   /* Grafik Laciverti */
+  --accent: #9a3412;
+  --navy: #1e293b;
+  --line-soft: rgba(0,0,0,0.08);
 }
 
 body {
@@ -12,17 +13,16 @@ body {
 }
 
 .container {
-  max-width: 850px;
+  max-width: 900px;
   width: 90%;
   margin: 50px auto;
-  background: #ffffff;
-  border-radius: 16px;
+  background: white;
+  border-radius: 18px;
   padding: 50px;
-  position: relative; /* Tema butonu konumu için */
-  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.35);
 }
 
-/* TEMA BUTONU - SOL ÜST */
 .theme-btn-top {
   position: absolute;
   top: 20px;
@@ -33,18 +33,13 @@ body {
   padding: 8px 12px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 12px;
-  z-index: 10;
 }
 
-/* PROFIL - YATAYDA ORTALI */
 .profile-area {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 20px;
-  margin-bottom: 40px;
 }
 
 .profile-wrapper {
@@ -55,90 +50,64 @@ body {
 
 .profile-img {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 4px solid var(--accent);
   object-fit: cover;
   opacity: 0;
   transition: opacity 1s;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.18);
 }
 
 .profile-img.active { opacity: 1; }
 
-.profile-text h1 { margin: 0; color: var(--accent); }
-.subtitle { color: #4b5563; margin-top: 5px; }
+.profile-text h1 { color: var(--accent); }
 
-/* BÖLÜMLER */
 .section { margin-top: 40px; }
+
 .section h2 {
-  border-bottom: 2px solid #f3f4f6;
+  border-bottom: 1px solid var(--line-soft);
   color: var(--accent);
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 }
 
-/* GRAFİK (BECERİLER) */
-.chart-container {
+/* Skill */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 35px;
   margin-top: 25px;
-  background: #f9fafb;
-  padding: 30px;
-  border-radius: 12px;
 }
 
-.bar-chart {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  height: 180px;
-  border-bottom: 2px solid #e5e7eb;
-  padding-bottom: 10px;
-}
+.skill-circle { text-align: center; }
 
-.bar-group {
+.circle {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  background:
+    conic-gradient(
+      var(--accent) calc(var(--skill) * 1%),
+      #e5e7eb 0
+    );
   display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 15%;
-}
-
-.bars {
-  display: flex;
-  align-items: flex-end;
-  gap: 6px;
-  height: 100%;
-}
-
-.bar {
-  width: 18px;
-  border-radius: 4px 4px 0 0;
-  transition: height 0.8s ease;
-}
-
-.bar-orange { background-color: var(--accent); }
-.bar-navy { background-color: var(--navy); }
-
-.label {
-  margin-top: 10px;
-  font-size: 13px;
-  font-weight: 700;
-  color: #374151;
-}
-
-.legend {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 20px;
   justify-content: center;
+  margin: 0 auto 12px;
 }
 
-.legend-item { display: flex; align-items: center; gap: 8px; font-size: 13px; }
-.box { width: 12px; height: 12px; border-radius: 2px; }
-.box.orange { background: var(--accent); }
-.box.navy { background: var(--navy); }
+.circle span {
+  background: white;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--accent);
+}
 
-/* DIGER STİLLER */
-.projects li { margin-bottom: 10px; font-size: 15px; color: #374151; }
-.contact i { color: var(--accent); margin-right: 10px; }
-.contact a { text-decoration: none; color: #1f2937; }
+.skill-name { font-weight: 600; }
+
+.project-count { font-size: 12px; color: #64748b; }

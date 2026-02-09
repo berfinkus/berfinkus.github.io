@@ -9,7 +9,6 @@ body {
   background: linear-gradient(120deg, #1f2933, #111827);
   display: flex;
   justify-content: center;
-  min-height: 100vh;
 }
 
 .container {
@@ -19,31 +18,26 @@ body {
   background: #ffffff;
   border-radius: 16px;
   padding: 50px;
-  position: relative; /* Tema butonu için gerekli */
+  position: relative; /* Tema butonu konumu için */
   box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
 /* TEMA BUTONU - SOL ÜST */
 .theme-btn-top {
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 20px;
+  left: 20px;
   background: var(--accent);
   color: white;
   border: none;
-  padding: 8px 15px;
-  border-radius: 6px;
-  font-size: 12px;
+  padding: 8px 12px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: opacity 0.3s;
+  font-size: 12px;
   z-index: 10;
 }
 
-.theme-btn-top:hover {
-  opacity: 0.9;
-}
-
-/* PROFIL - YATAYDA VE DIKEYDE ORTALI */
+/* PROFIL - YATAYDA ORTALI */
 .profile-area {
   display: flex;
   flex-direction: column;
@@ -72,38 +66,23 @@ body {
   transition: opacity 1s;
 }
 
-.profile-img.active {
-  opacity: 1;
-}
+.profile-img.active { opacity: 1; }
 
-.profile-text h1 {
-  margin: 0;
-  color: var(--accent);
-  font-size: 2.2rem;
-}
-
-.subtitle {
-  margin-top: 5px;
-  color: #4b5563;
-  font-weight: 500;
-}
+.profile-text h1 { margin: 0; color: var(--accent); }
+.subtitle { color: #4b5563; margin-top: 5px; }
 
 /* BÖLÜMLER */
-.section {
-  margin-top: 45px;
-}
-
+.section { margin-top: 40px; }
 .section h2 {
   border-bottom: 2px solid #f3f4f6;
   color: var(--accent);
   padding-bottom: 8px;
-  font-size: 1.4rem;
 }
 
-/* GRAFİK TASARIMI (BECERİLER) */
+/* GRAFİK (BECERİLER) */
 .chart-container {
   margin-top: 25px;
-  background: #fafafa;
+  background: #f9fafb;
   padding: 30px;
   border-radius: 12px;
 }
@@ -132,16 +111,16 @@ body {
 }
 
 .bar {
-  width: 20px;
+  width: 18px;
   border-radius: 4px 4px 0 0;
   transition: height 0.8s ease;
 }
 
-.bar.orange { background-color: var(--accent); }
-.bar.navy { background-color: var(--navy); }
+.bar-orange { background-color: var(--accent); }
+.bar-navy { background-color: var(--navy); }
 
 .label {
-  margin-top: 12px;
+  margin-top: 10px;
   font-size: 13px;
   font-weight: 700;
   color: #374151;
@@ -154,37 +133,12 @@ body {
   justify-content: center;
 }
 
-.legend-item {
-  font-size: 13px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #4b5563;
-}
-
-.box { width: 14px; height: 14px; border-radius: 3px; }
+.legend-item { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.box { width: 12px; height: 12px; border-radius: 2px; }
 .box.orange { background: var(--accent); }
 .box.navy { background: var(--navy); }
 
-/* PROJELER */
-.projects li {
-  margin-bottom: 12px;
-  font-size: 15px;
-  color: #374151;
-}
-
-/* ILETISIM */
-.contact i {
-  color: var(--accent);
-  margin-right: 10px;
-  width: 20px;
-}
-
-.contact a {
-  text-decoration: none;
-  color: #1f2937;
-}
-
-.contact p {
-  margin: 10px 0;
-}
+/* DIGER STİLLER */
+.projects li { margin-bottom: 10px; font-size: 15px; color: #374151; }
+.contact i { color: var(--accent); margin-right: 10px; }
+.contact a { text-decoration: none; color: #1f2937; }

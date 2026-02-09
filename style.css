@@ -20,8 +20,8 @@ body {
 /* PROFIL */
 .profile-area {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 
@@ -52,7 +52,7 @@ body {
 }
 
 .subtitle {
-  margin: 4px 0 0;
+  margin-top: 6px;
   color: #374151;
 }
 
@@ -67,34 +67,37 @@ body {
   padding-bottom: 6px;
 }
 
-/* BECERILER TABLO */
-.skills-table {
-  margin-top: 20px;
+/* === GRAFİKLİ BECERİLER === */
+.skill-chart {
+  margin-top: 25px;
   max-width: 520px;
 }
 
-.skill-row {
-  display: flex;
-  align-items: center;
-  margin-bottom: 14px;
-  font-size: 14px;
-}
-
-.skill-row span {
-  width: 110px;
-}
-
-.bar {
-  flex: 1;
-  height: 10px;
+.skill-bar {
+  position: relative;
+  height: 26px;
   background: #e5e7eb;
-  border-radius: 6px;
+  border-radius: 8px;
+  margin-bottom: 14px;
   overflow: hidden;
 }
 
-.fill {
+.skill-bar::before {
+  content: "";
+  position: absolute;
   height: 100%;
+  width: var(--val);
   background: #374151;
+}
+
+.skill-bar span {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 /* PROJELER */
@@ -116,7 +119,7 @@ body {
 
 /* TEMA BUTONU */
 .theme-btn {
-  margin-top: 40px;
+  margin-top: 12px;
   background: var(--accent);
   color: white;
   border: none;
@@ -125,3 +128,4 @@ body {
   font-size: 12px;
   cursor: pointer;
 }
+

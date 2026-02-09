@@ -1,13 +1,12 @@
+/* TEMA DEGISTIRME */
 const themes = [
   {
     bg: "linear-gradient(120deg, #0f172a, #020617)",
-    card: "#ffffff",
-    accent: "#f97316" // turuncu
+    accent: "#f97316"
   },
   {
     bg: "linear-gradient(120deg, #1e293b, #0f172a)",
-    card: "#ffffff",
-    accent: "#2563eb" // lacivert
+    accent: "#2563eb"
   }
 ];
 
@@ -15,8 +14,16 @@ let currentTheme = 0;
 
 function changeTheme() {
   currentTheme = (currentTheme + 1) % themes.length;
-  const theme = themes[currentTheme];
-
-  document.body.style.background = theme.bg;
-  document.documentElement.style.setProperty("--accent", theme.accent);
+  document.body.style.background = themes[currentTheme].bg;
+  document.documentElement.style.setProperty("--accent", themes[currentTheme].accent);
 }
+
+/* PROFIL FOTO DONME */
+const images = document.querySelectorAll(".profile-img");
+let currentImage = 0;
+
+setInterval(() => {
+  images[currentImage].classList.remove("active");
+  currentImage = (currentImage + 1) % images.length;
+  images[currentImage].classList.add("active");
+}, 3000);

@@ -1,3 +1,7 @@
+:root {
+  --accent: #f97316; /* JS bunu değiştiriyor */
+}
+
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
@@ -15,9 +19,12 @@ body {
   box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
+/* === ACCENT RENK KULLANAN YERLER === */
+
 h1 {
   margin-top: 0;
   font-size: 36px;
+  color: var(--accent);
 }
 
 .subtitle {
@@ -32,9 +39,10 @@ h1 {
 
 .section h2 {
   font-size: 24px;
-  border-bottom: 2px solid #e5e7eb;
+  border-bottom: 2px solid var(--accent);
   padding-bottom: 8px;
   margin-bottom: 20px;
+  color: var(--accent);
 }
 
 ul {
@@ -43,6 +51,23 @@ ul {
 
 li {
   margin-bottom: 10px;
+}
+
+/* === BUTON === */
+
+.theme-btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.theme-btn:hover {
+  opacity: 0.9;
 }
 
 .footer {

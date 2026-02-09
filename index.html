@@ -8,108 +8,89 @@
 </head>
 <body>
 
-  <div class="container">
+<div class="container">
 
-    <!-- PROFIL -->
-    <div class="profile-area">
-      <div class="profile-wrapper">
-        <img src="BERF.jpeg" class="profile-img active">
-        <img src="BERF2.jpeg" class="profile-img">
-      </div>
-
-      <div class="profile-text">
-        <h1>Şermin Kuş</h1>
-        <p class="subtitle">Yazılım Mühendisliği Öğrencisi</p>
-      </div>
+  <!-- PROFIL -->
+  <div class="profile-area">
+    <div class="profile-wrapper">
+      <img src="BERF.jpeg" class="profile-img active">
+      <img src="BERF2.jpeg" class="profile-img">
     </div>
 
-    <div class="section">
-      <h2>Hakkımda</h2>
-      <p>
-        Teknik alanda Görüntü İşleme, Yapay Zeka ve Gömülü Sistemler üzerine yoğunlaşırken;
-        bu ilgimi OpenCV gibi kütüphanelerle yaptığım pratik çalışmalar ve Python tabanlı
-        denemelerle projelerime aktarıyorum. Kişisel gelişimimde Dinler Tarihi ve Genel
-        Tarih araştırmalarına, dünya sinemasına ve edebiyata vakit ayırıyorum. Stratejik
-        düşünme becerilerimi satranç ile besliyor, farklı kültürleri tanımak amacıyla
-        seyahat etmeyi ve yeni yerler keşfetmeyi bir yaşam motivasyonu olarak görüyorum.
-      </p>
+    <div class="profile-text">
+      <h1>Şermin Kuş</h1>
+      <p class="subtitle">Yazılım Mühendisliği Öğrencisi</p>
     </div>
-
-    <div class="section">
-      <h2>Beceriler</h2>
-
-      <div class="skills-table">
-
-        <div class="skill-row">
-          <span>Java</span>
-          <div class="bar">
-            <div class="fill" style="width:80%"></div>
-          </div>
-        </div>
-
-        <div class="skill-row">
-          <span>Python</span>
-          <div class="bar">
-            <div class="fill" style="width:85%"></div>
-          </div>
-        </div>
-
-        <div class="skill-row">
-          <span>C</span>
-          <div class="bar">
-            <div class="fill" style="width:75%"></div>
-          </div>
-        </div>
-
-        <div class="skill-row">
-          <span>HTML</span>
-          <div class="bar">
-            <div class="fill" style="width:75%"></div>
-          </div>
-        </div>
-
-        <div class="skill-row">
-          <span>CSS</span>
-          <div class="bar">
-            <div class="fill" style="width:75%"></div>
-          </div>
-        </div>
-
-        <div class="skill-row">
-          <span>JavaScript</span>
-          <div class="bar">
-            <div class="fill" style="width:75%"></div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>Projeler</h2>
-      <ul class="projects">
-        <li><strong>Portföy Web Sitesi:</strong> HTML, CSS ve JavaScript ile geliştirildi.</li>
-        <li><strong>Kampüsüm:</strong> Spring Boot tabanlı kampüs içi etkileşim uygulaması.</li>
-        <li><strong>LMS Veritabanı:</strong> PostgreSQL ile ilişkisel veritabanı tasarımı.</li>
-        <li><strong>Görüntü İşleme + Yapay Zekâ:</strong> Pankreas kanseri erken teşhis ve tedavi takip projesi.</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>İletişim</h2>
-      <div class="contact">
-        <p><i class="fa-brands fa-github"></i>
-          <a href="https://github.com/berfinkus" target="_blank">github.com/berfinkus</a>
-        </p>
-        <p><i class="fa-solid fa-envelope"></i> berfinkus923@gmail.com</p>
-      </div>
-    </div>
-
-    <!-- TEMA BUTONU -->
-    <button onclick="changeTheme()" class="theme-btn">Tema</button>
-
   </div>
 
-  <script src="script.js"></script>
+  <!-- HAKKIMDA -->
+  <div class="section">
+    <h2>Hakkımda</h2>
+    <p>
+      Teknik alanda Görüntü İşleme, Yapay Zeka ve Gömülü Sistemler üzerine yoğunlaşırken;
+      bu ilgimi OpenCV gibi kütüphanelerle yaptığım pratik çalışmalar ve Python tabanlı
+      denemelerle projelerime aktarıyorum. Kişisel gelişimimde Dinler Tarihi ve Genel
+      Tarih araştırmalarına, dünya sinemasına ve edebiyata vakit ayırıyorum.
+      Stratejik düşünme becerilerimi satranç ile besliyor, seyahat etmeyi bir yaşam
+      motivasyonu olarak görüyorum.
+    </p>
+  </div>
+
+  <!-- BECERILER -->
+  <div class="section">
+    <h2>Beceriler</h2>
+
+    <div class="skill-chart">
+      <div class="skill-bar" style="--val:80%">
+        <span>Java</span>
+      </div>
+      <div class="skill-bar" style="--val:85%">
+        <span>Python</span>
+      </div>
+      <div class="skill-bar" style="--val:75%">
+        <span>C</span>
+      </div>
+      <div class="skill-bar" style="--val:75%">
+        <span>HTML</span>
+      </div>
+      <div class="skill-bar" style="--val:75%">
+        <span>CSS</span>
+      </div>
+      <div class="skill-bar" style="--val:75%">
+        <span>JavaScript</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJELER -->
+  <div class="section">
+    <h2>Projeler</h2>
+    <ul class="projects">
+      <li><strong>Portföy Web Sitesi:</strong> HTML, CSS ve JavaScript ile geliştirildi.</li>
+      <li><strong>Kampüsüm:</strong> Spring Boot tabanlı kampüs içi etkileşim uygulaması.</li>
+      <li><strong>LMS Veritabanı:</strong> PostgreSQL ile ilişkisel veritabanı tasarımı.</li>
+      <li><strong>Görüntü İşleme + Yapay Zekâ:</strong> Pankreas kanseri erken teşhis ve tedavi takip projesi.</li>
+    </ul>
+  </div>
+
+  <!-- ILETISIM -->
+  <div class="section">
+    <h2>İletişim</h2>
+    <div class="contact">
+      <p><i class="fa-brands fa-github"></i>
+        <a href="https://github.com/berfinkus" target="_blank">github.com/berfinkus</a>
+      </p>
+      <p><i class="fa-solid fa-envelope"></i> berfinkus923@gmail.com</p>
+
+      <!-- TEMA BUTONU -->
+      <button onclick="changeTheme()" class="theme-btn">
+        Tema Değiştir
+      </button>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

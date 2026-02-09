@@ -9,10 +9,15 @@
 
   <div class="container">
 
-    <!-- Tema Butonu -->
     <button onclick="changeTheme()" class="theme-btn">
       Tema Değiştir
     </button>
+
+    <!-- PROFIL FOTO SLIDER -->
+    <div class="profile-wrapper">
+      <img src="BERF.jpeg" class="profile-img active">
+      <img src="BERF2.jpeg" class="profile-img">
+    </div>
 
     <h1>Şermin Kuş</h1>
     <p class="subtitle">Yazılım Mühendisliği Öğrencisi</p>
@@ -20,32 +25,82 @@
     <div class="section">
       <h2>Hakkımda</h2>
       <p>
-        İnönü Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisiyim.
-        Web ve backend geliştirme alanlarına ilgi duyuyorum.
+        Teknik alanda Görüntü İşleme, Yapay Zeka ve Gömülü Sistemler üzerine yoğunlaşırken;
+        bu ilgimi OpenCV gibi kütüphanelerle yaptığım pratik çalışmalar ve Python tabanlı
+        denemelerle projelerime aktarıyorum. Kişisel gelişimimde Dinler Tarihi ve Genel
+        Tarih araştırmalarına, dünya sinemasına ve edebiyata vakit ayırıyorum. Stratejik
+        düşünme becerilerimi satranç ile besliyor, farklı kültürleri tanımak amacıyla
+        seyahat etmeyi ve yeni yerler keşfetmeyi bir yaşam motivasyonu olarak görüyorum.
       </p>
     </div>
 
     <div class="section">
       <h2>Beceriler</h2>
-      <ul>
-        <li>Java, Python, C</li>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Spring Boot, PostgreSQL</li>
-      </ul>
+
+      <div class="skill">
+        <span>Java</span>
+        <div class="bar"><div class="fill" style="width:80%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>Python</span>
+        <div class="bar"><div class="fill" style="width:85%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>C</span>
+        <div class="bar"><div class="fill" style="width:75%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>HTML</span>
+        <div class="bar"><div class="fill" style="width:75%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>CSS</span>
+        <div class="bar"><div class="fill" style="width:75%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="bar"><div class="fill" style="width:75%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>Spring Boot & PostgreSQL</span>
+        <div class="bar"><div class="fill" style="width:75%"></div></div>
+      </div>
     </div>
 
     <div class="section">
       <h2>Projeler</h2>
-      <ul>
-        <li>Kişisel Portföy Web Sitesi</li>
-        <li>Spring Boot ile Kampüsüm Uygulaması</li>
-        <li>LMS Veritabanı (PostgreSQL)</li>
-        <li>Pankreas Kanseri Erken Teşhis (Yapay Zekâ)</li>
+      <ul class="projects">
+        <li>
+          <strong>Kişisel Portföy Web Sitesi</strong><br>
+          HTML, CSS ve JavaScript kullanılarak geliştirilen, tema değişimi ve dinamik
+          içerikler içeren kişisel portföy sitesi.
+        </li>
+        <li>
+          <strong>Spring Boot ile Kampüsüm Uygulaması</strong><br>
+          Kampüs içi kayıp eşya, öğrenci etkileşimi ve içerik paylaşımını amaçlayan,
+          backend’i Spring Boot ile geliştirilen web tabanlı uygulama.
+        </li>
+        <li>
+          <strong>LMS Veritabanı (PostgreSQL)</strong><br>
+          Öğrenci, ders ve içerik yönetimini kapsayan ilişkisel veritabanı tasarımı ve
+          sorgu yapıları oluşturulmuştur.
+        </li>
+        <li>
+          <strong>Pankreas Kanseri Erken Teşhis (Yapay Zekâ)</strong><br>
+          Görüntü işleme ve makine öğrenmesi teknikleri kullanılarak erken teşhise
+          yönelik deneysel bir yapay zekâ projesi.
+        </li>
       </ul>
     </div>
 
     <div class="footer">
-      GitHub: 
+      GitHub:
       <a href="https://github.com/berfinkus" target="_blank">
         github.com/berfinkus
       </a>
@@ -53,8 +108,6 @@
 
   </div>
 
-  <!-- JavaScript -->
   <script src="script.js"></script>
-
 </body>
 </html>

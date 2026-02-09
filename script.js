@@ -1,7 +1,6 @@
-/* TEMA */
 const themes = [
-  { bg: "linear-gradient(120deg,#0f172a,#020617)", accent: "#f97316" },
-  { bg: "linear-gradient(120deg,#1e293b,#0f172a)", accent: "#2563eb" }
+  { bg: "linear-gradient(120deg,#1f2933,#111827)", accent: "#c2410c" }, // Koyu Turuncu Tema
+  { bg: "linear-gradient(120deg,#1e293b,#0f172a)", accent: "#3b82f6" }  // Mavi Tema
 ];
 
 let t = 0;
@@ -11,10 +10,9 @@ function changeTheme() {
   document.documentElement.style.setProperty("--accent", themes[t].accent);
 }
 
-/* PROFIL FOTO */
+// Profil Fotoğrafı Geçişi (Aynı kaldı)
 const imgs = document.querySelectorAll(".profile-img");
 let i = 0;
-
 setInterval(() => {
   imgs[i].classList.remove("active");
   i = (i + 1) % imgs.length;

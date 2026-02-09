@@ -11,7 +11,7 @@ function changeTheme() {
   document.documentElement.style.setProperty("--accent", themes[t].accent);
 }
 
-/* PROFIL SLIDER */
+/* PROFIL FOTO */
 const imgs = document.querySelectorAll(".profile-img");
 let i = 0;
 

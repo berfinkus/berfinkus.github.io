@@ -4,26 +4,24 @@
   <meta charset="UTF-8">
   <title>Şermin Kuş | Portföy</title>
   <link rel="stylesheet" href="style.css">
-  <!-- ICONS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- TEMA BUTONU -->
-  <button onclick="changeTheme()" class="theme-btn">
-    Tema
-  </button>
-
   <div class="container">
 
-    <!-- PROFIL FOTO SLIDER -->
-    <div class="profile-wrapper">
-      <img src="BERF.jpeg" class="profile-img active">
-      <img src="BERF2.jpeg" class="profile-img">
-    </div>
+    <!-- PROFIL ALANI -->
+    <div class="profile-area">
+      <div class="profile-wrapper">
+        <img src="BERF.jpeg" class="profile-img active">
+        <img src="BERF2.jpeg" class="profile-img">
+      </div>
 
-    <h1>Şermin Kuş</h1>
-    <p class="subtitle">Yazılım Mühendisliği Öğrencisi</p>
+      <div class="profile-text">
+        <h1>Şermin Kuş</h1>
+        <p class="subtitle">Yazılım Mühendisliği Öğrencisi</p>
+      </div>
+    </div>
 
     <div class="section">
       <h2>Hakkımda</h2>
@@ -41,40 +39,22 @@
       <h2>Beceriler</h2>
 
       <div class="skills">
-        <div class="skill">
-          <span>Java</span>
-          <div class="vbar"><div style="height:80%"></div></div>
-        </div>
-        <div class="skill">
-          <span>Python</span>
-          <div class="vbar"><div style="height:85%"></div></div>
-        </div>
-        <div class="skill">
-          <span>C</span>
-          <div class="vbar"><div style="height:75%"></div></div>
-        </div>
-        <div class="skill">
-          <span>HTML</span>
-          <div class="vbar"><div style="height:75%"></div></div>
-        </div>
-        <div class="skill">
-          <span>CSS</span>
-          <div class="vbar"><div style="height:75%"></div></div>
-        </div>
-        <div class="skill">
-          <span>JS</span>
-          <div class="vbar"><div style="height:75%"></div></div>
-        </div>
+        <div class="skill"><span>Java</span><div class="vbar"><div style="height:80%"></div></div></div>
+        <div class="skill"><span>Python</span><div class="vbar"><div style="height:85%"></div></div></div>
+        <div class="skill"><span>C</span><div class="vbar"><div style="height:75%"></div></div></div>
+        <div class="skill"><span>HTML</span><div class="vbar"><div style="height:75%"></div></div></div>
+        <div class="skill"><span>CSS</span><div class="vbar"><div style="height:75%"></div></div></div>
+        <div class="skill"><span>JS</span><div class="vbar"><div style="height:75%"></div></div></div>
       </div>
     </div>
 
     <div class="section">
       <h2>Projeler</h2>
       <ul class="projects">
-        <li><strong>Portföy Web Sitesi:</strong> HTML, CSS ve JavaScript ile geliştirilen kişisel site.</li>
-        <li><strong>Kampüsüm:</strong> Spring Boot tabanlı kampüs içi etkileşim uygulaması.</li>
-        <li><strong>LMS DB:</strong> PostgreSQL ile ilişkisel veritabanı tasarımı.</li>
-        <li><strong>Yapay Zekâ:</strong> Pankreas kanseri erken teşhis denemeleri.</li>
+        <li><strong>Portföy Web Sitesi:</strong> HTML, CSS ve JavaScript ile geliştirildi.</li>
+        <li><strong>Kampüsüm:</strong> Spring Boot tabanlı kampüs içi uygulama.</li>
+        <li><strong>LMS DB:</strong> PostgreSQL ile veritabanı tasarımı.</li>
+        <li><strong>Yapay Zekâ:</strong> Pankreas kanseri erken teşhis çalışmaları.</li>
       </ul>
     </div>
 
@@ -84,11 +64,14 @@
         <p><i class="fa-brands fa-github"></i>
           <a href="https://github.com/berfinkus" target="_blank">github.com/berfinkus</a>
         </p>
-        <p><i class="fa-solid fa-envelope"></i>
-          berfinkus923@gmail.com
-        </p>
+        <p><i class="fa-solid fa-envelope"></i> berfinkus923@gmail.com</p>
       </div>
     </div>
+
+    <!-- TEMA BUTONU -->
+    <button onclick="changeTheme()" class="theme-btn">
+      Tema
+    </button>
 
   </div>
 

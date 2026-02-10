@@ -120,8 +120,10 @@ h2 {
 }
 
 @media print {
-    section {
-        page-break-before: always;
+    .circle {
+        background: none !important;
+        border: 3px solid var(--accent);
+        color: black;
     }
 }
 

@@ -35,17 +35,15 @@ body{
   cursor:pointer;
 }
 
-/* PROFİL TAM ORTA */
 .profile-area{
-  position:absolute;
-  top:40px;
-  left:50%;
-  transform:translateX(-50%);
   display:flex;
   flex-direction:column;
-  align-items:center;
+  align-items:center;   /* YATAY TAM ORTA */
+  justify-content:center;
   text-align:center;
+  margin:0 auto;
 }
+
 
 .profile-wrapper{
   width:150px;

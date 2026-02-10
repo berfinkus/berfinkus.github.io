@@ -1,5 +1,5 @@
 :root {
-  --accent: #9a3412;      /* koyu dark turuncu */
+  --accent: #9a3412;
   --line-soft: rgba(0,0,0,0.08);
 }
 
@@ -20,9 +20,14 @@ body {
   background: #fff;
   border-radius: 18px;
   padding: 50px;
-  padding-top: 220px;          /* PROFİL İÇİN YER */
+  padding-top: 220px;
   position: relative;
   box-shadow: 0 25px 50px rgba(0,0,0,0.35);
+
+  /* ORTALAMA GARANTİ */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* TEMA BUTONU */
@@ -39,18 +44,17 @@ body {
 }
 
 /* ===================== */
-/* PROFİL – TAM ORTA */
+/* PROFİL – %100 TAM ORTA */
 /* ===================== */
 
-.profile-area{
-  width:100%;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  text-align:center;
-  margin-top:-170px;   /* yukarı alır */
+.profile-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: -140px;   /* sadece yukarı alır, kaydırmaz */
 }
-
 
 .profile-wrapper {
   width: 150px;
@@ -60,6 +64,7 @@ body {
 
 .profile-img {
   position: absolute;
+  inset: 0;
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -88,6 +93,7 @@ body {
 
 .section {
   margin-top: 45px;
+  width: 100%;
 }
 
 .section h2 {
@@ -115,11 +121,10 @@ body {
   width: 115px;
   height: 115px;
   border-radius: 50%;
-  background:
-    conic-gradient(
-      var(--accent) calc(var(--skill) * 1%),
-      #e5e7eb 0
-    );
+  background: conic-gradient(
+    var(--accent) calc(var(--skill) * 1%),
+    #e5e7eb 0
+  );
   display: flex;
   align-items: center;
   justify-content: center;

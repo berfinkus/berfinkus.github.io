@@ -1,111 +1,126 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>Şermin Kuş | Portföy</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <title>Şermin Kuş | CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
+<body class="light">
+
+<button class="theme-toggle" onclick="toggleTheme()">
+    <i class="fa-solid fa-circle-half-stroke"></i>
+</button>
 
 <div class="container">
-  <button onclick="changeTheme()" class="theme-btn-top">
-    <i class="fa-solid fa-palette"></i> Tema
-  </button>
 
-  <!-- HERO -->
-  <div class="hero-profile">
-    <div class="hero-text">
-      <h1>Şermin Kuş</h1>
-      <p class="subtitle">Yazılım Mühendisliği Öğrencisi</p>
-    </div>
+    <!-- SOL PANEL -->
+    <aside class="sidebar">
+        <h1>CV</h1>
 
-    <div class="hero-image profile-wrapper">
-      <img src="BERF.jpeg" class="profile-img active" alt="Profil Fotoğrafı">
-      <img src="BERF2.jpeg" class="profile-img" alt="Profil Fotoğrafı 2">
-    </div>
-  </div>
+        <div class="personal">
+            <h2>Şermin KUŞ</h2>
 
-  <hr class="hero-line">
+            <p>
+                <i class="fa-brands fa-github"></i>
+                github.com/berfinkus
+            </p>
 
-  <div class="section">
-    <h2>Hakkımda</h2>
-    <p>
-      Teknik alanda Görüntü İşleme, Yapay Zeka ve Gömülü Sistemler üzerine yoğunlaşırken;
-      bu ilgimi OpenCV gibi kütüphanelerle yaptığım pratik çalışmalar ve Python tabanlı
-      denemelerle projelerime aktarıyorum.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Beceriler & Deneyim</h2>
-    <div class="chart-container">
-      <div class="legend">
-        <span class="legend-item"><span class="box orange"></span> Yetkinlik (%)</span>
-        <span class="legend-item"><span class="box navy"></span> Proje Sayısı</span>
-      </div>
-
-      <div class="bar-chart">
-        <div class="bar-group">
-          <div class="bars">
-            <div class="bar navy" style="height:40px"></div>
-            <div class="bar orange" style="height:80px"></div>
-          </div>
-          <span class="label">Java</span>
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                berfinkus923@gmail.com
+            </p>
         </div>
+    </aside>
 
-        <div class="bar-group">
-          <div class="bars">
-            <div class="bar navy" style="height:20px"></div>
-            <div class="bar orange" style="height:85px"></div>
-          </div>
-          <span class="label">Python</span>
-        </div>
+    <!-- SAĞ PANEL -->
+    <main class="content">
 
-        <div class="bar-group">
-          <div class="bars">
-            <div class="bar navy" style="height:20px"></div>
-            <div class="bar orange" style="height:75px"></div>
-          </div>
-          <span class="label">C</span>
-        </div>
+        <section>
+            <h2>Profil</h2>
+            <p>
+                Gömülü sistemler, yapay zeka ve görüntü işleme teknolojilerine duyduğum tutkuyla;
+                Python ve OpenCV kütüphanelerini kullanarak gerçek zamanlı çözümler üretiyorum.
+                Teorik bilgilerimi pratik projelerle destekleyerek donanım ve yazılımın kesişim
+                noktalarında kendimi geliştiriyorum. Teknik yetkinliklerimin yanı sıra; dinler
+                tarihi ve genel tarih araştırmalarıyla beslediğim geniş dünya görüşümü,
+                satrancın öğrettiği stratejik düşünme disipliniyle birleştiriyorum.
+                Sürekli öğrenmeyi ve farklı disiplinlerden beslenerek multidisipliner bir bakış
+                açısı geliştirmeyi temel vizyonum olarak benimsiyorum.
+            </p>
+        </section>
 
-        <div class="bar-group">
-          <div class="bars">
-            <div class="bar navy" style="height:20px"></div>
-            <div class="bar orange" style="height:75px"></div>
-          </div>
-          <span class="label">HTML</span>
-        </div>
+        <section>
+            <h2>Projeler</h2>
 
-        <div class="bar-group">
-          <div class="bars">
-            <div class="bar navy" style="height:20px"></div>
-            <div class="bar orange" style="height:75px"></div>
-          </div>
-          <span class="label">CSS</span>
-        </div>
+            <div class="project">
+                <h3>Pankreas Kanseri Erken Teşhis ve Tedavi Takip Projesi</h3>
+                <p>
+                    OpenCV ve Python kullanarak medikal görüntülerin analiz edildiği bu projede,
+                    pankreas kanserinin erken evre teşhisi üzerine yoğunlaşılmıştır.
+                    Yapay zekâ algoritmaları ile tümörlü dokuların tespiti yapılarak
+                    hastalık sürecinin takibini kolaylaştıran bir karar destek mekanizması geliştirilmiştir.
+                </p>
+            </div>
 
-        <div class="bar-group">
-          <div class="bars">
-            <div class="bar navy" style="height:20px"></div>
-            <div class="bar orange" style="height:75px"></div>
-          </div>
-          <span class="label">JS</span>
-        </div>
-      </div>
-    </div>
-  </div>
+            <div class="project">
+                <h3>Kampüsüm (Spring Boot)</h3>
+                <p>
+                    Üniversite içi etkileşimi artırmak amacıyla geliştirilen bu uygulama,
+                    Spring Boot altyapısı kullanılarak modern yazılım mimarisine uygun şekilde tasarlanmıştır.
+                    Kampüs içindeki sosyal süreçlerin ve kaynakların dijital ortamda etkin yönetimi sağlanmıştır.
+                </p>
+            </div>
 
-  <div class="section">
-    <h2>İletişim</h2>
-    <div class="contact">
-      <p><i class="fa-brands fa-github"></i>
-        <a href="https://github.com/berfinkus" target="_blank">github.com/berfinkus</a>
-      </p>
-      <p><i class="fa-solid fa-envelope"></i> berfinkus923@gmail.com</p>
-    </div>
-  </div>
+            <div class="project">
+                <h3>LMS Veritabanı Tasarımı (PostgreSQL)</h3>
+                <p>
+                    Karmaşık veri setlerinin yönetimi için PostgreSQL tabanlı ilişkisel veritabanı
+                    şeması oluşturulmuş, veri bütünlüğü ve sorgu optimizasyonları üzerine odaklanılmıştır.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Kişisel Portföy Web Sitesi</h3>
+                <p>
+                    HTML, CSS ve JavaScript kullanılarak geliştirilen bu web sitesi,
+                    teknik projelerin sergilendiği, modern ve kullanıcı dostu bir dijital kimlik sunmaktadır.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Bildiğim Diller</h2>
+
+            <div class="skills">
+                <div class="skill" data-percent="85">
+                    <span>Spring Boot</span>
+                    <div class="circle"></div>
+                </div>
+
+                <div class="skill" data-percent="85">
+                    <span>Java</span>
+                    <div class="circle"></div>
+                </div>
+
+                <div class="skill" data-percent="85">
+                    <span>Python</span>
+                    <div class="circle"></div>
+                </div>
+
+                <div class="skill" data-percent="75">
+                    <span>C</span>
+                    <div class="circle"></div>
+                </div>
+
+                <div class="skill" data-percent="85">
+                    <span>HTML / CSS / JS</span>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 </div>
 
 <script src="script.js"></script>

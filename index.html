@@ -1,58 +1,133 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>Şermin Kuş | Portföy</title>
+<meta charset="UTF-8">
+<title>Şermin Kuş | Portföy</title>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
 <div class="container">
 
-  <button onclick="changeTheme()" class="theme-btn-top">
-    <i class="fa-solid fa-palette"></i> Tema
-  </button>
+<button onclick="changeTheme()" class="theme-btn-top">
+  <i class="fa-solid fa-palette"></i> Tema
+</button>
 
-  <div class="profile-area">
-    <div class="profile-wrapper">
-      <img src="BERF.jpeg" class="profile-img active">
-      <img src="BERF2.jpeg" class="profile-img">
-    </div>
-
-    <div class="profile-text">
-      <h1>Şermin Kuş</h1>
-      <p class="subtitle">Yazılım Mühendisliği Öğrencisi</p>
-    </div>
+<!-- PROFİL -->
+<div class="profile-area">
+  <div class="profile-wrapper">
+    <img src="BERF.jpeg" class="profile-img active">
+    <img src="BERF2.jpeg" class="profile-img">
   </div>
 
-  <div class="section">
-    <h2>Hakkımda</h2>
-    <p>
-      Teknik alanda Görüntü İşleme, Yapay Zeka ve Gömülü Sistemler üzerine
-      yoğunlaşıyorum.
-    </p>
+  <div class="profile-text">
+    <h1>Şermin Kuş</h1>
+    <p class="subtitle">Yazılım Mühendisliği Öğrencisi</p>
+  </div>
+</div>
+
+<!-- HAKKIMDA -->
+<div class="section">
+<h2>Hakkımda</h2>
+<p>
+Teknik alanda Görüntü İşleme, Yapay Zeka ve Gömülü Sistemler üzerine yoğunlaşırken;
+bu ilgimi OpenCV gibi kütüphanelerle yaptığım pratik çalışmalar ve Python tabanlı
+denemelerle projelerime aktarıyorum.  
+Kişisel gelişimimde Dinler Tarihi, Genel Tarih, dünya sineması ve edebiyata
+vakit ayırıyorum.
+</p>
+</div>
+
+<!-- BECERİLER -->
+<div class="section">
+<h2>Beceriler & Deneyim</h2>
+
+<div class="skill-grid">
+
+  <div class="skill-circle">
+    <div class="circle" style="--skill:80"><span>80%</span></div>
+    <div class="skill-name">Java</div>
+    <div class="project-count">4 Proje</div>
   </div>
 
-  <div class="section">
-    <h2>Projeler</h2>
-    <ul class="projects">
-      <li>Portföy Web Sitesi</li>
-      <li>Kampüsüm Spring Boot</li>
-      <li>LMS Veritabanı</li>
-    </ul>
+  <div class="skill-circle">
+    <div class="circle" style="--skill:85"><span>85%</span></div>
+    <div class="skill-name">Python</div>
+    <div class="project-count">2 Proje</div>
   </div>
 
-  <div class="section">
-    <h2>İletişim</h2>
-    <div class="contact">
-      <p><i class="fa-brands fa-github"></i> github.com/berfinkus</p>
-      <p><i class="fa-solid fa-envelope"></i> berfinkus923@gmail.com</p>
-    </div>
+  <div class="skill-circle">
+    <div class="circle" style="--skill:75"><span>75%</span></div>
+    <div class="skill-name">C</div>
+    <div class="project-count">2 Proje</div>
   </div>
+
+  <div class="skill-circle">
+    <div class="circle" style="--skill:75"><span>75%</span></div>
+    <div class="skill-name">HTML</div>
+    <div class="project-count">2 Proje</div>
+  </div>
+
+  <div class="skill-circle">
+    <div class="circle" style="--skill:75"><span>75%</span></div>
+    <div class="skill-name">CSS</div>
+    <div class="project-count">2 Proje</div>
+  </div>
+
+  <div class="skill-circle">
+    <div class="circle" style="--skill:75"><span>75%</span></div>
+    <div class="skill-name">JavaScript</div>
+    <div class="project-count">2 Proje</div>
+  </div>
+
+</div>
+</div>
+
+<!-- PROJELER -->
+<div class="section">
+<h2>Projeler</h2>
+<ul class="projects">
+  <li>
+    <strong>Portföy Web Sitesi:</strong>
+    HTML, CSS ve JavaScript kullanılarak modern, responsive yapı.
+  </li>
+  <li>
+    <strong>Kampüsüm:</strong>
+    Spring Boot tabanlı kampüs içi etkileşim ve yönetim uygulaması.
+  </li>
+  <li>
+    <strong>LMS Veritabanı:</strong>
+    PostgreSQL ile ilişkisel veritabanı tasarımı.
+  </li>
+  <li>
+    <strong>Görüntü İşleme + Yapay Zekâ:</strong>
+    Pankreas kanseri erken teşhis ve tedavi takip projesi.
+  </li>
+</ul>
+</div>
+
+<!-- İLETİŞİM -->
+<div class="section">
+<h2>İletişim</h2>
+
+<div class="contact">
+  <p>
+    <i class="fa-brands fa-github"></i>
+    <a href="https://github.com/berfinkus" target="_blank">
+      github.com/berfinkus
+    </a>
+  </p>
+
+  <p>
+    <i class="fa-solid fa-envelope"></i>
+    berfinkus923@gmail.com
+  </p>
+</div>
+</div>
 
 </div>
 

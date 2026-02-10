@@ -118,3 +118,25 @@ h2 {
     border-radius: 50%;
     cursor: pointer;
 }
+
+@media print {
+
+    body {
+        background: white !important;
+    }
+
+    .container {
+        min-height: auto;
+    }
+
+    .sidebar,
+    section,
+    .project {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    .sidebar {
+        height: auto;
+    }
+}

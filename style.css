@@ -22,6 +22,7 @@ body {
   box-shadow: 0 25px 50px rgba(0,0,0,0.35);
 }
 
+/* Tema */
 .theme-btn-top {
   position: absolute;
   top: 20px;
@@ -34,31 +35,29 @@ body {
   cursor: pointer;
 }
 
-/* HERO */
+/* HERO PROFİL */
 .hero-profile {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 40px;
   margin-bottom: 35px;
 }
 
-.hero-image {
-  position: relative;
-  width: 140px;
-  height: 180px;
+.hero-text h1 {
+  color: var(--accent);
+  margin-bottom: 5px;
 }
 
-.profile-img {
-  position: absolute;
+.subtitle { color: #4b5563; }
+
+.hero-image img {
   width: 140px;
   height: 180px;
   object-fit: cover;
   border-radius: 4px;
-  opacity: 0;
-  transition: opacity 1s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
-
-.profile-img.active { opacity: 1; }
 
 .hero-line {
   border: none;
@@ -67,7 +66,7 @@ body {
   margin-bottom: 40px;
 }
 
-/* SECTION */
+/* BÖLÜMLER */
 .section { margin-top: 45px; }
 
 .section h2 {
@@ -83,6 +82,8 @@ body {
   grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
   gap: 35px;
 }
+
+.skill-circle { text-align: center; }
 
 .circle {
   width: 115px;
@@ -111,6 +112,22 @@ body {
   color: var(--accent);
 }
 
+.skill-name { font-weight: 600; }
+.project-count { font-size: 12px; color: #64748b; }
+
+/* PROJELER */
 .projects li {
   margin-bottom: 10px;
+  color: #374151;
+}
+
+/* İLETİŞİM */
+.contact i {
+  color: var(--accent);
+  margin-right: 10px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #1f2937;
 }

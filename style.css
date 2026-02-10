@@ -22,7 +22,7 @@ body {
   box-shadow: 0 25px 50px rgba(0,0,0,0.35);
 }
 
-/* Tema */
+/* TEMA */
 .theme-btn-top {
   position: absolute;
   top: 20px;
@@ -35,7 +35,7 @@ body {
   cursor: pointer;
 }
 
-/* HERO PROFİL */
+/* HERO */
 .hero-profile {
   display: flex;
   align-items: center;
@@ -49,14 +49,29 @@ body {
   margin-bottom: 5px;
 }
 
-.subtitle { color: #4b5563; }
+.subtitle {
+  color: #4b5563;
+}
 
-.hero-image img {
+.hero-image {
+  position: relative;
+  width: 140px;
+  height: 180px;
+}
+
+.profile-img {
   width: 140px;
   height: 180px;
   object-fit: cover;
   border-radius: 4px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.profile-img.active {
+  opacity: 1;
 }
 
 .hero-line {
@@ -66,8 +81,10 @@ body {
   margin-bottom: 40px;
 }
 
-/* BÖLÜMLER */
-.section { margin-top: 45px; }
+/* SECTIONS */
+.section {
+  margin-top: 45px;
+}
 
 .section h2 {
   border-bottom: 1px solid var(--line-soft);
@@ -76,52 +93,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* SKILL */
-.skill-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
-  gap: 35px;
-}
-
-.skill-circle { text-align: center; }
-
-.circle {
-  width: 115px;
-  height: 115px;
-  border-radius: 50%;
-  background:
-    conic-gradient(
-      var(--accent) calc(var(--skill) * 1%),
-      #e5e7eb 0
-    );
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 12px;
-}
-
-.circle span {
-  width: 78px;
-  height: 78px;
-  border-radius: 50%;
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  color: var(--accent);
-}
-
-.skill-name { font-weight: 600; }
-.project-count { font-size: 12px; color: #64748b; }
-
-/* PROJELER */
-.projects li {
-  margin-bottom: 10px;
-  color: #374151;
-}
-
-/* İLETİŞİM */
+/* CONTACT */
 .contact i {
   color: var(--accent);
   margin-right: 10px;

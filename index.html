@@ -1,81 +1,101 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<title>Şermin Kuş | Portföy</title>
-
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet"
- href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Şermin Kuş | Portföy</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
 
 <div class="container">
+  <button onclick="changeTheme()" class="theme-btn-top">
+    <i class="fa-solid fa-palette"></i> Tema
+  </button>
 
-<button onclick="changeTheme()" class="theme-btn-top">
-  <i class="fa-solid fa-palette"></i> Tema
-</button>
+  <div class="profile-area">
+    <div class="profile-wrapper">
+      <img src="BERF.jpeg" class="profile-img active">
+      <img src="BERF2.jpeg" class="profile-img">
+    </div>
 
-<!-- HERO PROFİL -->
-<div class="hero-profile">
-
-  <div class="hero-text">
-    <h1>Şermin Kuş</h1>
-    <p class="subtitle">Yazılım Mühendisliği Öğrencisi</p>
+    <div class="profile-text">
+      <h1>Şermin Kuş</h1>
+      <p class="subtitle">Yazılım Mühendisliği Öğrencisi</p>
+    </div>
   </div>
 
-  <div class="hero-image">
-    <img src="BERF.jpeg" class="profile-img active">
-    <img src="BERF2.jpeg" class="profile-img">
+  <div class="section">
+    <h2>Hakkımda</h2>
+    <p>
+      Teknik alanda Görüntü İşleme, Yapay Zeka ve Gömülü Sistemler üzerine yoğunlaşırken;
+      bu ilgimi OpenCV gibi kütüphanelerle yaptığım pratik çalışmalar ve Python tabanlı
+      denemelerle projelerime aktarıyorum.
+    </p>
   </div>
 
-</div>
+  <div class="section">
+    <h2>Beceriler & Deneyim</h2>
+    <div class="chart-container">
+      <div class="legend">
+        <span class="legend-item"><span class="box orange"></span> Yetkinlik (%)</span>
+        <span class="legend-item"><span class="box navy"></span> Proje Sayısı</span>
+      </div>
 
-<hr class="hero-line">
-
-<!-- HAKKIMDA -->
-<div class="section">
-<h2>Hakkımda</h2>
-<p>
-Görüntü İşleme, Yapay Zeka ve Gömülü Sistemler üzerine çalışmalar yapıyorum.
-</p>
-</div>
-
-<!-- BECERİLER -->
-<div class="section">
-<h2>Beceriler & Deneyim</h2>
-
-<div class="skill-grid">
-  <div class="skill-circle">
-    <div class="circle" style="--skill:80"><span>80%</span></div>
-    <div class="skill-name">Java</div>
-    <div class="project-count">2 Proje</div>
+      <div class="bar-chart">
+        <div class="bar-group">
+          <div class="bars">
+            <div class="bar navy" style="height: 40px;" title="2 Proje"></div>
+            <div class="bar orange" style="height: 80px;" title="%80 Yetkinlik"></div>
+          </div>
+          <span class="label">Java</span>
+        </div>
+        <div class="bar-group">
+          <div class="bars">
+            <div class="bar navy" style="height: 20px;" title="1 Proje"></div>
+            <div class="bar orange" style="height: 85px;" title="%85 Yetkinlik"></div>
+          </div>
+          <span class="label">Python</span>
+        </div>
+        <div class="bar-group">
+          <div class="bars">
+            <div class="bar navy" style="height: 20px;"></div>
+            <div class="bar orange" style="height: 75px;"></div>
+          </div>
+          <span class="label">C</span>
+        </div>
+        <div class="bar-group">
+          <div class="bars">
+            <div class="bar navy" style="height: 20px;"></div>
+            <div class="bar orange" style="height: 75px;"></div>
+          </div>
+          <span class="label">HTML</span>
+        </div>
+        <div class="bar-group">
+          <div class="bars">
+            <div class="bar navy" style="height: 20px;"></div>
+            <div class="bar orange" style="height: 75px;"></div>
+          </div>
+          <span class="label">CSS</span>
+        </div>
+        <div class="bar-group">
+          <div class="bars">
+            <div class="bar navy" style="height: 20px;"></div>
+            <div class="bar orange" style="height: 75px;"></div>
+          </div>
+          <span class="label">JS</span>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="skill-circle">
-    <div class="circle" style="--skill:85"><span>85%</span></div>
-    <div class="skill-name">Python</div>
-    <div class="project-count">1 Proje</div>
+  <div class="section">
+    <h2>İletişim</h2>
+    <div class="contact">
+      <p><i class="fa-brands fa-github"></i> <a href="https://github.com/berfinkus" target="_blank">github.com/berfinkus</a></p>
+      <p><i class="fa-solid fa-envelope"></i> berfinkus923@gmail.com</p>
+    </div>
   </div>
-
-  <div class="skill-circle">
-    <div class="circle" style="--skill:75"><span>75%</span></div>
-    <div class="skill-name">JavaScript</div>
-    <div class="project-count">1 Proje</div>
-  </div>
-</div>
-</div>
-
-<!-- PROJELER -->
-<div class="section">
-<h2>Projeler</h2>
-<ul class="projects">
-  <li>Portföy Web Sitesi</li>
-  <li>Kampüsüm – Spring Boot</li>
-  <li>LMS Veritabanı</li>
-  <li>Görüntü İşleme + Yapay Zeka</li>
-</ul>
 </div>
 
 <script src="script.js"></script>

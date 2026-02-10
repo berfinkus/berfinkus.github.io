@@ -119,24 +119,3 @@ h2 {
     cursor: pointer;
 }
 
-@media print {
-
-    body {
-        background: white !important;
-    }
-
-    .container {
-        min-height: auto;
-    }
-
-    .sidebar,
-    section,
-    .project {
-        page-break-inside: avoid;
-        break-inside: avoid;
-    }
-
-    .sidebar {
-        height: auto;
-    }
-}

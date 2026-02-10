@@ -1,176 +1,87 @@
-:root {
-  --accent: #9a3412;
-  --line-soft: rgba(0,0,0,0.08);
+:root{
+  --accent:#9a3412;
+  --line-soft:rgba(0,0,0,0.08);
 }
 
-/* GENEL */
-body {
-  margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: linear-gradient(120deg,#1f2933,#111827);
-  display: flex;
-  justify-content: center;
+body{
+  margin:0;
+  font-family:"Segoe UI",Arial;
+  background:linear-gradient(120deg,#1f2933,#111827);
+  display:flex;
+  justify-content:center;
 }
 
-/* ANA KART */
-.container {
-  max-width: 900px;
-  width: 90%;
-  margin: 50px auto;
-  background: #fff;
-  border-radius: 18px;
-  padding: 50px;
-  padding-top: 220px;
-  position: relative;
-  box-shadow: 0 25px 50px rgba(0,0,0,0.35);
-
-  /* ORTALAMA GARANTİ */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.container{
+  max-width:900px;
+  width:90%;
+  margin:50px auto;
+  background:#fff;
+  border-radius:18px;
+  padding:50px;
+  padding-top:220px;
+  position:relative;
+  box-shadow:0 25px 50px rgba(0,0,0,0.35);
 }
 
-/* TEMA BUTONU */
-.theme-btn-top {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background: var(--accent);
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 8px;
-  cursor: pointer;
+.theme-btn-top{
+  position:absolute;
+  top:20px;
+  left:20px;
+  background:var(--accent);
+  color:#fff;
+  border:none;
+  padding:8px 12px;
+  border-radius:8px;
+  cursor:pointer;
 }
 
-/* ===================== */
-/* PROFİL – %100 TAM ORTA */
-/* ===================== */
-
-.profile-area {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-top: -140px;   /* sadece yukarı alır, kaydırmaz */
+/* PROFİL TAM ORTA */
+.profile-area{
+  position:absolute;
+  top:40px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
 }
 
-.profile-wrapper {
-  width: 150px;
-  height: 150px;
-  position: relative;
+.profile-wrapper{
+  width:150px;
+  height:150px;
+  position:relative;
 }
 
-.profile-img {
-  position: absolute;
-  inset: 0;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 1s;
-  box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+.profile-img{
+  position:absolute;
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  object-fit:cover;
+  opacity:0;
+  transition:opacity 1s;
 }
 
-.profile-img.active {
-  opacity: 1;
+.profile-img.active{opacity:1;}
+
+.profile-text h1{
+  color:var(--accent);
+  margin:18px 0 6px;
 }
 
-.profile-text h1 {
-  color: var(--accent);
-  margin: 18px 0 6px;
+.subtitle{color:#4b5563;}
+
+.section{margin-top:45px;}
+
+.section h2{
+  border-bottom:1px solid var(--line-soft);
+  color:var(--accent);
+  padding-bottom:6px;
+  margin-bottom:20px;
 }
 
-.subtitle {
-  color: #4b5563;
-}
-
-/* ===================== */
-/* BÖLÜMLER */
-/* ===================== */
-
-.section {
-  margin-top: 45px;
-  width: 100%;
-}
-
-.section h2 {
-  border-bottom: 1px solid var(--line-soft);
-  color: var(--accent);
-  padding-bottom: 6px;
-  margin-bottom: 20px;
-}
-
-/* ===================== */
-/* SKILLS */
-/* ===================== */
-
-.skill-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 35px;
-}
-
-.skill-circle {
-  text-align: center;
-}
-
-.circle {
-  width: 115px;
-  height: 115px;
-  border-radius: 50%;
-  background: conic-gradient(
-    var(--accent) calc(var(--skill) * 1%),
-    #e5e7eb 0
-  );
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 12px;
-}
-
-.circle span {
-  width: 78px;
-  height: 78px;
-  border-radius: 50%;
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  color: var(--accent);
-}
-
-.skill-name {
-  font-weight: 600;
-}
-
-.project-count {
-  font-size: 12px;
-  color: #64748b;
-}
-
-/* ===================== */
-/* PROJELER */
-/* ===================== */
-
-.projects li {
-  margin-bottom: 10px;
-  color: #374151;
-}
-
-/* ===================== */
-/* İLETİŞİM */
-/* ===================== */
-
-.contact i {
-  color: var(--accent);
-  margin-right: 10px;
-}
-
-.contact a {
-  text-decoration: none;
-  color: #1f2937;
+.contact i{
+  color:var(--accent);
+  margin-right:10px;
 }

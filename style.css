@@ -119,3 +119,9 @@ h2 {
     cursor: pointer;
 }
 
+@media print {
+    section {
+        page-break-before: always;
+    }
+}
+

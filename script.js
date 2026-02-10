@@ -11,12 +11,13 @@ function changeTheme() {
   document.documentElement.style.setProperty("--accent", themes[t].accent);
 }
 
-/* FOTO SLIDER */
-const imgs = document.querySelectorAll(".profile-img");
-let i = 0;
+document.addEventListener("DOMContentLoaded", () => {
+  const imgs = document.querySelectorAll(".profile-img");
+  let i = 0;
 
-setInterval(() => {
-  imgs[i].classList.remove("active");
-  i = (i + 1) % imgs.length;
-  imgs[i].classList.add("active");
-}, 3000);
+  setInterval(() => {
+    imgs[i].classList.remove("active");
+    i = (i + 1) % imgs.length;
+    imgs[i].classList.add("active");
+  }, 3000);
+});

@@ -3,6 +3,7 @@
   --line-soft: rgba(0,0,0,0.08);
 }
 
+/* GENEL */
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
@@ -11,6 +12,7 @@ body {
   justify-content: center;
 }
 
+/* ANA KART */
 .container {
   max-width: 900px;
   width: 90%;
@@ -18,11 +20,12 @@ body {
   background: #fff;
   border-radius: 18px;
   padding: 50px;
+  padding-top: 220px;          /* PROFİL İÇİN YER */
   position: relative;
   box-shadow: 0 25px 50px rgba(0,0,0,0.35);
 }
 
-/* Tema */
+/* TEMA BUTONU */
 .theme-btn-top {
   position: absolute;
   top: 20px;
@@ -35,13 +38,19 @@ body {
   cursor: pointer;
 }
 
+/* ===================== */
 /* PROFİL – TAM ORTA */
+/* ===================== */
+
 .profile-area {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: -800px;
 }
 
 .profile-wrapper {
@@ -61,17 +70,26 @@ body {
   box-shadow: 0 12px 25px rgba(0,0,0,0.18);
 }
 
-.profile-img.active { opacity: 1; }
+.profile-img.active {
+  opacity: 1;
+}
 
 .profile-text h1 {
   color: var(--accent);
-  margin-bottom: 5px;
+  margin: 18px 0 6px;
 }
 
-.subtitle { color: #4b5563; }
+.subtitle {
+  color: #4b5563;
+}
 
+/* ===================== */
 /* BÖLÜMLER */
-.section { margin-top: 45px; }
+/* ===================== */
+
+.section {
+  margin-top: 45px;
+}
 
 .section h2 {
   border-bottom: 1px solid var(--line-soft);
@@ -80,14 +98,19 @@ body {
   margin-bottom: 20px;
 }
 
-/* SKILL */
+/* ===================== */
+/* SKILLS */
+/* ===================== */
+
 .skill-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 35px;
 }
 
-.skill-circle { text-align: center; }
+.skill-circle {
+  text-align: center;
+}
 
 .circle {
   width: 115px;
@@ -116,16 +139,28 @@ body {
   color: var(--accent);
 }
 
-.skill-name { font-weight: 600; }
-.project-count { font-size: 12px; color: #64748b; }
+.skill-name {
+  font-weight: 600;
+}
 
+.project-count {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* ===================== */
 /* PROJELER */
+/* ===================== */
+
 .projects li {
   margin-bottom: 10px;
   color: #374151;
 }
 
+/* ===================== */
 /* İLETİŞİM */
+/* ===================== */
+
 .contact i {
   color: var(--accent);
   margin-right: 10px;

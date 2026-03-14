@@ -1,112 +1,256 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <title>Şermin Kuş | CV</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body class="light">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Portfolio | Şermin</title>
+    <meta
+      name="description"
+      content="Modern portfolio featuring UI/UX and visualization work: Swaply mobile app UI and Pancreas 3D Visualization."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
 
-<button class="theme-toggle" onclick="toggleTheme()">
-    <i class="fa-solid fa-circle-half-stroke"></i>
-</button>
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="brand" href="#home" aria-label="Go to home">
+          <span class="brand__mark" aria-hidden="true">B</span>
+          <span class="brand__text">Berfin</span>
+        </a>
 
-<div class="container">
+        <nav class="nav" aria-label="Primary">
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+          <a class="btn btn--ghost" href="./cv-a3.html">View A3 CV</a>
+          <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle theme">
+            <span class="icon-btn__icon" aria-hidden="true">◐</span>
+          </button>
+        </nav>
+      </div>
+    </header>
 
-    <!-- SOL PANEL -->
-    <aside class="sidebar">
+    <main id="content">
+      <section id="home" class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow">UI/UX • Front-end • Visualization</p>
+            <h1 class="hero__title">
+              I design modern product experiences and bring them to life on the web.
+            </h1>
+            <p class="hero__subtitle">
+              Portfolio highlights: a commercial mobile app UI concept for a new & second-hand
+              marketplace (Swaply) and a 3D pancreas visualization project.
+            </p>
 
-        <!-- PROFİL FOTO -->
-        <div class="profile-photo">
-            <img src="BERF.jpeg" alt="Şermin Kuş">
+            <div class="hero__cta">
+              <a class="btn" href="#projects">Explore projects</a>
+              <a class="btn btn--ghost" href="./cv-a3.html">Open A3 CV</a>
+            </div>
+
+            <div class="hero__meta">
+              <div class="pill">Available for freelance</div>
+              <div class="pill">Based in Türkiye (open to remote)</div>
+            </div>
+          </div>
+
+          <aside class="hero__card" aria-label="Profile">
+            <div class="profile">
+              <img class="profile__img" src="./assets/profile.png" alt="Profile photo" />
+              <div class="profile__body">
+                <div class="profile__name">Berfin</div>
+                <div class="profile__role">UI/UX Designer • Front-end Developer</div>
+                <div class="profile__links">
+                  <a class="link" href="#contact">Contact</a>
+                  <span class="sep" aria-hidden="true">·</span>
+                  <a class="link" href="./cv-a3.html">A3 CV</a>
+                </div>
+              </div>
+            </div>
+          </aside>
         </div>
+      </section>
 
-        <div class="personal">
-            <h2>Şermin KUŞ</h2>
-
-            <p>
-                <i class="fa-brands fa-github"></i>
-                github.com/berfinkus
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Selected projects</h2>
+            <p class="muted">
+              A small selection of work focused on product UI and visual storytelling.
             </p>
+          </div>
 
-            <p>
-                <i class="fa-solid fa-envelope"></i>
-                berfinkus923@gmail.com
-            </p>
+          <div class="grid">
+            <article class="card">
+              <div class="card__media">
+                <div class="badge">Mobile UI</div>
+                <div class="card__mediaInner card__mediaInner--gradient">
+                  <div class="card__mediaTitle">Swaply</div>
+                  <div class="card__mediaSubtitle">Commercial marketplace app UI</div>
+                </div>
+              </div>
+
+              <div class="card__body">
+                <h3 class="card__title">Swaply — New & second-hand marketplace (UI/UX)</h3>
+                <p class="card__text">
+                  A mobile application interface for a commercial product where users can browse and
+                  purchase both original and second-hand items. Designed with a clean, modern visual
+                  system and scalable components.
+                </p>
+
+                <div class="card__tags" aria-label="Swaply tags">
+                  <span class="tag">UI Design</span>
+                  <span class="tag">Design System</span>
+                  <span class="tag">Mobile</span>
+                  <span class="tag">Figma</span>
+                </div>
+
+                <div class="card__actions">
+                  <a
+                    class="btn btn--ghost"
+                    href="https://www.figma.com/design/1Swz3p8RuM3Ods0MxeCsL7/Untitled?node-id=686-301&m=dev&t=yVXOSMbgSxHkIJI4-1"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Open Figma
+                  </a>
+                  <button class="btn" type="button" data-open-modal="swaply">
+                    Overview
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__media">
+                <div class="badge">3D</div>
+                <button
+                  class="card__imageBtn"
+                  type="button"
+                  data-open-image="./assets/pancreas-3d.png"
+                  aria-label="Open pancreas 3D visualization image"
+                >
+                  <img
+                    class="card__img"
+                    src="./assets/pancreas-3d.png"
+                    alt="Pancreas 3D visualization screenshot"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+
+              <div class="card__body">
+                <h3 class="card__title">Pancreas Analysis — 3D visualization</h3>
+                <p class="card__text">
+                  A 3D visualization used to support analysis and presentation. Focused on clarity,
+                  depth cues, and a readable view composition.
+                </p>
+
+                <div class="card__tags" aria-label="Pancreas project tags">
+                  <span class="tag">3D</span>
+                  <span class="tag">Visualization</span>
+                  <span class="tag">Medical</span>
+                </div>
+
+                <div class="card__actions">
+                  <button class="btn" type="button" data-open-image="./assets/pancreas-3d.png">
+                    View image
+                  </button>
+                  <a class="btn btn--ghost" href="./cv-a3.html#projects">See on CV</a>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
-    </aside>
+      </section>
 
-    <!-- SAĞ PANEL -->
-    <main class="content">
+      <section id="skills" class="section section--alt">
+        <div class="container">
+          <div class="section__head">
+            <h2>Skills</h2>
+            <p class="muted">Tools and strengths I like to use for product work.</p>
+          </div>
 
-        <section>
-            <h2>Profil</h2>
-            <p>
-                Gömülü sistemler, yapay zeka ve görüntü işleme teknolojilerine duyduğum tutkuyla;
-                Python ve OpenCV kütüphanelerini kullanarak gerçek zamanlı çözümler üretiyorum.
-                Teorik bilgilerimi pratik projelerle destekleyerek donanım ve yazılımın kesişim
-                noktalarında kendimi geliştiriyorum. Teknik yetkinliklerimin yanı sıra; dinler
-                tarihi ve genel tarih araştırmalarıyla beslediğim geniş dünya görüşümü,
-                satrancın öğrettiği stratejik düşünme disipliniyle birleştiriyorum.
-                Sürekli öğrenmeyi ve farklı disiplinlerden beslenerek multidisipliner bir bakış
-                açısı geliştirmeyi temel vizyonum olarak benimsiyorum.
-            </p>
-        </section>
+          <div class="chips">
+            <span class="chip">Figma</span>
+            <span class="chip">UI/UX</span>
+            <span class="chip">Prototyping</span>
+            <span class="chip">Design Systems</span>
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Responsive Design</span>
+            <span class="chip">Accessibility Basics</span>
+            <span class="chip">3D Visualization</span>
+          </div>
+        </div>
+      </section>
 
-        <section>
-            <h2>Projeler</h2>
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Contact</h2>
+            <p class="muted">Replace the placeholders with your real links anytime.</p>
+          </div>
 
-            <div class="project">
-                <h3>Pankreas Kanseri Erken Teşhis ve Tedavi Takip Projesi</h3>
-                <p>
-                    OpenCV ve Python kullanarak medikal görüntülerin analiz edildiği bu projede,
-                    pankreas kanserinin erken evre teşhisi üzerine yoğunlaşılmıştır.
-                    Yapay zekâ algoritmaları ile tümörlü dokuların tespiti yapılarak
-                    hastalık sürecinin takibini kolaylaştıran bir karar destek mekanizması geliştirilmiştir.
+          <div class="contact">
+            <div class="contact__card">
+              <div class="contact__row">
+                <div class="contact__label">Email</div>
+                <button class="copy" type="button" data-copy="your.email@example.com">
+                  your.email@example.com
+                </button>
+              </div>
+              <div class="contact__row">
+                <div class="contact__label">LinkedIn</div>
+                <a class="link" href="#" aria-label="LinkedIn (add your link)">Add your link</a>
+              </div>
+              <div class="contact__row">
+                <div class="contact__label">GitHub</div>
+                <a class="link" href="#" aria-label="GitHub (add your link)">Add your link</a>
+              </div>
+            </div>
+
+            <div class="contact__note">
+              <div class="note">
+                <div class="note__title">Tip</div>
+                <p class="note__text">
+                  To export your CV as PDF: open <span class="kbd">A3 CV</span> and use
+                  <span class="kbd">Print</span> → <span class="kbd">Save as PDF</span>.
                 </p>
+              </div>
             </div>
-
-            <div class="project">
-                <h3>Kampüsüm (Spring Boot)</h3>
-                <p>
-                    Üniversite içi etkileşimi artırmak amacıyla geliştirilen bu uygulama,
-                    Spring Boot altyapısı kullanılarak modern yazılım mimarisine uygun şekilde tasarlanmıştır.
-                </p>
-            </div>
-
-            <div class="project">
-                <h3>LMS Veritabanı Tasarımı (PostgreSQL)</h3>
-                <p>
-                    PostgreSQL tabanlı ilişkisel veritabanı şeması oluşturulmuş,
-                    veri bütünlüğü ve sorgu optimizasyonları üzerine çalışılmıştır.
-                </p>
-            </div>
-
-            <div class="project">
-                <h3>Kişisel Portföy Web Sitesi</h3>
-                <p>
-                    HTML, CSS ve JavaScript kullanılarak geliştirilen bu web sitesi,
-                    modern ve kullanıcı dostu bir dijital kimlik sunmaktadır.
-                </p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Bildiğim Diller</h2>
-
-            <div class="skills">
-                <div class="skill" data-percent="85"><span>Spring Boot</span><div class="circle"></div></div>
-                <div class="skill" data-percent="85"><span>Java</span><div class="circle"></div></div>
-                <div class="skill" data-percent="85"><span>Python</span><div class="circle"></div></div>
-                <div class="skill" data-percent="75"><span>C</span><div class="circle"></div></div>
-                <div class="skill" data-percent="85"><span>HTML / CSS / JS</span><div class="circle"></div></div>
-            </div>
-        </section>
-
+          </div>
+        </div>
+      </section>
     </main>
-</div>
 
-<script src="script.js"></script>
-</body>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year"></span> Berfin</span>
+        <span class="muted">Built with HTML • CSS • JS</span>
+      </div>
+    </footer>
+
+    <div id="modal" class="modal" hidden>
+      <div class="modal__backdrop" data-close-modal></div>
+      <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Project details">
+        <button class="modal__close" type="button" data-close-modal aria-label="Close dialog">
+          ✕
+        </button>
+        <div id="modalContent" class="modal__content"></div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
